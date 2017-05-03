@@ -139,7 +139,7 @@ function $awesome() {
     $('.final').show();
 
     if (count < 2) {
-        $('.other-text').append('<p>Oh dear! <br>Looks like things have changed since you were at school.</p>');
+        $('.other-text').append('<p>Oh dear! <br> Try again!</p>');
     } else if (count <= 2 && count < 4) {
         $('.other-text').append('<p>Better luck next time</p>');
        $('.score').css('color', 'yellow');
