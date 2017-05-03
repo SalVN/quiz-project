@@ -14,6 +14,9 @@ $(document).ready(function () {
         $clicked++;
         console.log($clicked);
         $('.actual-score').text(count);
+            if ($clicked === 5) {
+                $awesome();
+            }
     });
     $('.wrong-1').click(function () {
         $(this).css('background-color', '#CF6766');
@@ -22,6 +25,9 @@ $(document).ready(function () {
         $('.wrong-text-1').show();
         $clicked++;
         console.log($clicked);
+            if ($clicked === 5) {
+                $awesome();
+            }
     });
 //q2
        $('.correct-2').click(function () {
@@ -33,6 +39,9 @@ $(document).ready(function () {
         $clicked++;
         console.log($clicked);
         $('.actual-score').text(count);
+            if ($clicked === 5) {
+                $awesome();
+            }
         
     });
     $('.wrong-2').click(function () {
@@ -42,6 +51,9 @@ $(document).ready(function () {
         $('.wrong-text-2').show();
         $clicked++;
         console.log($clicked);
+            if ($clicked === 5) {
+                $awesome();
+            }
     });
 //q3
     $('.correct-3').click(function () {
@@ -53,6 +65,9 @@ $(document).ready(function () {
         $clicked++;
         console.log($clicked);
         $('.actual-score').text(count);
+            if ($clicked === 5) {
+                $awesome();
+            }
     });
     $('.wrong-3').click(function () {
         $(this).css('background-color', '#CF6766');
@@ -61,6 +76,9 @@ $(document).ready(function () {
         $('.wrong-text-3').show();
         $clicked++;
         console.log($clicked);
+            if ($clicked === 5) {
+                $awesome();
+            }
     });
 
 //q4
@@ -73,6 +91,9 @@ $(document).ready(function () {
         $clicked++;
         console.log($clicked);
         $('.actual-score').text(count);
+            if ($clicked === 5) {
+                $awesome();
+            }
     });
     $('.wrong-4').click(function () {
         $(this).css('background-color', '#CF6766');
@@ -81,6 +102,9 @@ $(document).ready(function () {
         $('.wrong-text-4').show();
         $clicked++;
         console.log($clicked);
+            if ($clicked === 5) {
+                $awesome();
+             }
     });
 
 //q5
@@ -94,7 +118,7 @@ $(document).ready(function () {
         console.log($clicked);
         $('.actual-score').text(count);
             if ($clicked === 5) {
-                awesome();
+                $awesome();
             }
     });
     $('.wrong-5').click(function () {
@@ -105,12 +129,27 @@ $(document).ready(function () {
         $clicked++;
         console.log($clicked);
             if ($clicked === 5) {
-                awesome();
+                $awesome();
             }
     });
 
-function awesome() {
-    console.log(count)
+function $awesome() {
+    $('.questions').hide();
+    $('.score').append(count + ' out of 5!');
+    $('.final').show();
+
+    if (count < 2) {
+        $('.other-text').append('<p>Oh dear! <br>Looks like things have changed since you were at school.</p>');
+    } else if (count <= 2 && count < 4) {
+        $('.other-text').append('<p>Better luck next time</p>');
+       $('.score').css('color', 'yellow');
+    }  else if (count === 4) {
+        $('.other-text').append('<p>You are getting there.</p>')
+         $('.score').css('color', 'khaki');
+    }  else {
+        $('.other-text').append('<p>A perfect score! <br>Are you 11?</p>')
+        $('.score').css('color', 'rgb(87,188,144)');
+    }
 };
 
 
