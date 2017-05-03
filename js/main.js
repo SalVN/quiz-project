@@ -140,7 +140,7 @@ function $awesome() {
 
     if (count < 2) {
         $('.other-text').append('<p>Oh dear! <br> Try again!</p>');
-    } else if (count <= 2 && count < 4) {
+    } else if (count >= 2 && count < 4) {
         $('.other-text').append('<p>Better luck next time</p>');
        $('.score').css('color', 'yellow');
     }  else if (count === 4) {
