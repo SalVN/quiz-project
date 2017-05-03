@@ -1,3 +1,96 @@
-h1 {
-    color: red;
+body {
+    background-color: #CAE4DB;
+}
+
+.main-title {
+    color: #E24E42;
+    text-align: center;
+    font-family: 'Baloo', cursive;
+    font-size: 4rem;
+}
+
+.sub-title {
+    text-align: center;
+    font-family: 'Baloo', sans-serif;
+    font-size: 2rem;
+    margin-top: -3rem;
+    color: #30415D
+}
+
+.question {
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+}
+
+.example {
+    background-color: peachpuff;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 1rem;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: black;
+    margin-top: -1rem;
+}
+
+.box {
+    background-color: white;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 1rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+}
+
+.wrong-text {
+    background-color: rgb(207,103,102);
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 1rem;
+    padding: 2px;
+}
+
+.correct-text {
+    background-color: rgb(87,188,144);
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 1rem;
+    padding: 2px;
+}
+
+.counter {
+    position: fixed;
+    bottom: 0;
+    left: 2rem;
+    width: 8rem;
+    height: 8rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Baloo', sans-serif;
+    font-size: 1.5rem;
+    padding: -2rem;
+}
+
+.actual-score {
+    font-size: 2rem;
+    color: white;
+    margin: -1.5rem;
+
 }
